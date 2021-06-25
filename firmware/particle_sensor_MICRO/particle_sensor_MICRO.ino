@@ -10,7 +10,7 @@ byte autoStop[4] = {0x68, 0x1, 0x20, 0x77};
 byte autoStart[4] = {0x68, 0x1, 0x40, 0x57};
 
 void setup() {
-  Wire.begin(0x04);                // join i2c bus with address #4
+  Wire.begin(0x0A);                // join i2c bus with address #10
   Wire.onRequest(requestEvent);
   
   Serial.begin(9600);
